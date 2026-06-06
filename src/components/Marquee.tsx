@@ -5,7 +5,8 @@ import StackIcon from "tech-stack-icons";
 export default function LogoMarquee() {
   const logos = [
     {
-      name: "ReactJS", icon: <StackIcon name="react" />,
+      name: "ReactJS",
+      icon: <StackIcon name="react" />,
     },
     { name: "Next.js", icon: <StackIcon name="nextjs" /> },
     { name: "React Native", icon: <StackIcon name="reactnative" /> },
@@ -25,16 +26,30 @@ export default function LogoMarquee() {
   ];
 
   return (
-    <div className="overflow-hidden py-5 px-0 flex gap-4 w-full shrink-0 group">
-      {logos.map((logo, idx) => (
-        <div
-          key={idx}
-          className="min-h-14 min-w-40 flex items-center justify-center gap-2 p-3 rounded-xl border border-gray-300 shadow-md "
-        >
-          <div style={{ width: 30, height: 30 }}>{logo.icon} </div>
-          <span className="text-s font-bold">{logo.name}</span>
-        </div>
-      ))}
+    <div className="flex gap-4">
+      <div className="py-5 px-0 flex gap-4 shrink-0 group">
+        {logos.map((logo, idx) => (
+          <div
+            key={idx}
+            className="min-h-14 min-w-40 flex items-center justify-center gap-2 p-3 rounded-xl border border-gray-300 shadow-md "
+          >
+            <div style={{ width: 30, height: 30 }}>{logo.icon} </div>
+            <span className="text-s font-bold">{logo.name}</span>
+          </div>
+        ))}
+      </div>
+
+      <div className="py-5 px-0 flex gap-4 shrink-0 group">
+        {logos.map((logo, idx) => (
+          <div
+            key={idx}
+            className="min-h-14 min-w-40 flex items-center justify-center gap-2 p-3 rounded-xl border border-gray-300 shadow-md "
+          >
+            <div style={{ width: 30, height: 30 }}>{logo.icon} </div>
+            <span className="text-s font-bold">{logo.name}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

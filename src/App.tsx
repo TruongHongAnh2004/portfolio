@@ -51,7 +51,7 @@ function App() {
       </div>
 
       <div className="mt-20">
-        <div>
+        <div className="overflow-hidden">
           <p className="text-5xl font-bold text-center">
             Technological Foundation
           </p>

@@ -42,7 +42,7 @@
  .group {
     /* ... */
     will-change: transform; /* We should be nice to the browser - let it know what we're going to animate. */
-    animation: scrolling 5s linear infinite;
+    animation: scrolling 10s linear infinite;
   }
 
   @keyframes scrolling {
@@ -50,6 +50,6 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-600%);
+      transform: translateX(-100%);
     }
   }
