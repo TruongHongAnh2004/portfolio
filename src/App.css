@@ -26,7 +26,7 @@
     border-radius: inherit;
     z-index: -4;
     padding: 2px;
-    animation: autoRotate 5s linear infinite;
+    animation: autoRotate 2s linear infinite;
 }
 
 .box::after{
