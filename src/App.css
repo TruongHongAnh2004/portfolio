@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+.box{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@property --deg{
+    syntax: '<angle>';
+    inherits: true;
+    inline-size: none;
+}
+
+
+.box::before, 
+.box::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background: conic-gradient(
+        from var(--deg) at center, #00c3ff, #4d0199, #6300c6, #00c3ff
+        );
+    border-radius: inherit;
+    z-index: -4;
+    padding: 2px;
+    animation: autoRotate 2s linear infinite;
+}
+
+.box::after{
+    filter: blur(10px);
+}
+
+@keyframes autoRotate {
+    to{
+        --deg: 360deg;
+    }
+}
+
+ .group {
+    /* ... */
+    will-change: transform; /* We should be nice to the browser - let it know what we're going to animate. */
+    animation: scrolling 2s linear infinite;
+  }
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
