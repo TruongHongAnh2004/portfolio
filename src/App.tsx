@@ -7,7 +7,8 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <div className="flex px-40 pt-20 gap-10">
+    <div className="flex justify-center">
+      <div className="flex w-300 pt-20 gap-10">
         <div className="grid content-center gap-4">
           <div className="font-bold text-7xl">
             Hi, I'm {""}
@@ -37,7 +38,7 @@ function App() {
           </div>
         </div>
 
-        <div className="w-250 h-120 rounded-3xl">
+        <div className="w-300 h-120 rounded-3xl">
           <div className="box">
             <img
               src={myLogo}
@@ -46,6 +47,7 @@ function App() {
             />
           </div>
         </div>
+      </div>
       </div>
 
       <div className="mt-20">

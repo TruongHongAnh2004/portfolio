@@ -11,12 +11,19 @@ export default function Footer() {
         </div>
 
         <div className="flex gap-3">
-          <img
-            onClick={() => {}}
-            src={Linkedin}
-            alt="LinkedIn Image"
-            className="w-10 h-10 block"
-          />
+          <a
+            href="https://www.linkedin.com/in/h%E1%BB%93ng-anh-tr%C6%B0%C6%A1ng-87138a2b6/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              onClick={() => {}}
+              src={Linkedin}
+              alt="LinkedIn Image"
+              className="w-10 h-10 block"
+            />
+          </a>
+
           <a
             href="https://www.facebook.com/honganh.truong.184"
             target="_blank"
