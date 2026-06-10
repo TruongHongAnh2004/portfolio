@@ -20,13 +20,20 @@ export default function LogoMarquee() {
     { name: "GitLab", icon: <StackIcon name="gitlab" /> },
     { name: "Figma", icon: <StackIcon name="figma" /> },
     { name: "Postman", icon: <StackIcon name="postman" /> },
+    { name: "Ubuntu", icon: <StackIcon name= "ubuntu" />},
+    { name: "Linux", icon: <StackIcon name= "linux" />},
     { name: "Tan Stack Query", icon: <StackIcon name="tanstack" /> },
     { name: "Zustand", icon: <StackIcon name="zustand" /> },
     { name: "Redux Toolkit", icon: <StackIcon name="redux" /> },
+    { name: "Claude AI", icon: <StackIcon name="claude" /> },
+    { name: "Cursor", icon: <StackIcon name="cursor" /> },
+    { name: "ChatGPT", icon: <StackIcon name="openai" /> },
+    { name: "Gemini", icon: <StackIcon name="gemini" /> }
+
   ];
 
   return (
-    <div className="flex gap-4">
+    <div className="mt-5 flex gap-4">
       <div className="py-5 px-0 flex gap-4 shrink-0 group">
         {logos.map((logo, idx) => (
           <div
