@@ -3,22 +3,20 @@ import { Building4 } from "iconsax-reactjs";
 export default function Projects() {
   return (
     <div className="flex justify-center">
-      <div className="w-300 py-10 flex gap-10">
+      <div className="w-6/10 py-10 flex gap-10">
         {/* CARD 1 */}
         <div
           className="bg-gray-100  hover:border hover:border-blue-500 shadow-sm
     transition-all
     duration-300
-    hover:-translate-y-1 hover:shadow-card-hover hover:text-blue-500
+    hover:-translate-y-1 hover:shadow-card-hover hover:text-blue-600
     px-8 py-5"
         >
-          <div className="flex gap-3 items-center text-lg">
-            <div className="bg-orange-100 py-1 px-2 rounded-lg flex items-center">
-              <p className="text-orange-500 font-ibm">
-                March 2026 - June 2026
-              </p>
-            </div>
-            <p className="text-blue-600 text- font-ibm">ERP Human Resources</p>
+          <div className="text-lg">
+            <p className="text-orange-500 bg-orange-100 py-1 px-2 rounded-lg font-ibm font-extrabold inline-block">
+              March 2026 - June 2026
+            </p>
+            <p className="text-blue-600 mt-1 font-ibm font-semibold">ERP Human Resources</p>
           </div>
 
           <div className="flex items-center gap-3">
@@ -45,16 +43,14 @@ export default function Projects() {
           className="bg-gray-100  hover:border hover:border-blue-500 shadow-sm
     transition-all
     duration-300
-    hover:-translate-y-1 hover:shadow-card-hover hover:text-blue-500
+    hover:-translate-y-1 hover:shadow-card-hover hover:text-blue-600
     px-8 py-5"
         >
-          <div className="flex gap-3 items-center text-lg font-ibm">
-            <div className="bg-orange-100 py-1 px-2 rounded-lg flex items-center">
-              <p className="text-orange-500 font-ibm">
+          <div className="">
+              <p className="text-orange-500 bg-orange-100 py-1 px-2 rounded-lg font-extrabold font-ibm inline-block">
                 January 2026 - March 2026
               </p>
-            </div>
-            <p className="text-blue-600 text- font-ibm">BOS - VPPOS</p>
+            <p className="text-blue-600 mt-1 font-ibm font-semibold">BOS - VPPOS</p>
           </div>
 
           <div className="flex items-center gap-3">

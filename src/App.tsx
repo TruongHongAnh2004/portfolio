@@ -6,21 +6,20 @@ import Footer from "./components/Footer";
 import Timeline from "./components/TimeLine";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
-
 function App() {
   return (
     <>
       <div className="flex justify-center">
-        <div className="flex w-300 pt-20 gap-10">
+        <div className="flex w-6/10 pt-20 gap-10">
           <div className="grid content-center gap-4">
-            <div className="font-bold text-7xl font-ibm">
+            <div className="font-bold text-5xl font-ibm">
               Hi, I'm {""}
               <span className="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
                 Truong Hong Anh
               </span>
             </div>
-            <p className="text-2xl mt-5 text-gray-500 font-inter">
-              <strong>Frontend Developer with 1 year of experience</strong>
+            <p className="text-xl mt-5 text-gray-500 font-inter">
+              <strong>Frontend Developer with 1 year of experience </strong>
               building responsive and user-friendly web applications using
               React, TypeScript, Next.js, Tailwind CSS, and modern frontend
               technologies. Experienced in API integration, state management,
@@ -29,15 +28,24 @@ function App() {
             </p>
 
             <div className="flex gap-5">
-              <button className="rounded-full bg-black text-white flex items-center gap-2 px-8 py-3 mt-10">
+              <button
+                className="rounded-full bg-black text-white flex items-center gap-2 px-8 py-3 mt-10 hover:bg-gray-500"
+                onClick={() =>
+                  document.getElementById("contact")?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+              >
                 <p className="font-bold text-xl font-inter">Contact Me</p>
                 <DirectRight className="[&_path]:stroke-[2.5]" />
               </button>
 
-              <button className="rounded-full bg-blue-700 text-white flex items-center gap-2 px-5 py-3 mt-10">
-                <p className="font-bold text-xl font-inter">Download CV</p>
-                <Import className="[&_path]:stroke-[2.5]" />
-              </button>
+              <a href={`${import.meta.env.BASE_URL}/CV_Hong_Anh.pdf`} download="CV_TruongHongAnh.pdf" className="btn">
+                <button className="rounded-full bg-blue-700 text-white flex items-center gap-2 px-5 py-3 mt-10 hover:bg-blue-500">
+                  <p className="font-bold text-xl font-inter ">Download CV</p>
+                  <Import className="[&_path]:stroke-[2.5]" />
+                </button>
+              </a>
             </div>
           </div>
 
@@ -94,7 +102,10 @@ function App() {
         </p>
         <Projects />
       </div>
-      <Footer />
+
+      <div id="contact">
+        <Footer />
+      </div>
     </>
   );
 }

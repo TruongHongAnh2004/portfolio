@@ -4,16 +4,16 @@ import logoHcmue from "../assets/logoHcmue.svg";
 export default function Education() {
   return (
     <div className="flex justify-center mt-10">
-      <div className="flex border border-blue-200 bg-blue-50 w-300 py-10 shadow-lg">
-        <div className="px-20">
+      <div className="flex border border-blue-200 bg-blue-50 w-6/10 p-10 shadow-lg gap-10">
+        <div className="flex items-center w-1/2">
           <img
             src={hcmue}
             alt="Profile Image"
-            className=" min-w-122 h-auto block rounded-lg"
+            className=" w-full h-auto block rounded-lg"
           />
         </div>
 
-        <div className="w-full pr-5">
+        <div className="w-1/2 pr-5">
           <div className="flex justify-between items-start">
             <div>
               <img
@@ -24,7 +24,7 @@ export default function Education() {
             </div>
 
             <div className="bg-red-100 py-1 px-2 rounded-lg flex items-center">
-              <p className="text-red-500 font-ibm">2022 - 2026</p>
+              <p className="text-red-500 font-ibm font-extrabold">2022 - 2026</p>
             </div>
           </div>
 

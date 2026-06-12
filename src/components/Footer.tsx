@@ -1,11 +1,18 @@
 export default function Footer() {
   return (
     <div className="flex justify-center bg-gray-100 mt-10 border-t border-gray-300">
-      <footer className="w-300 flex justify-between py-20">
+      <footer className="w-6/10 flex justify-between py-20">
         <div>
-          <p className="text-3xl font-bold font-ibm">Trương Hồng Anh</p>
+          <p className="text-3xl font-bold font-ibm">Truong Hong Anh</p>
+
           <p className="text-gray-500 pt-2 font-inter">
-            honganhtruong46@gmail.com
+            <span>Email: </span>
+            <a href="mailto:honganhtruong46@gmail.com">honganhtruong46@gmail.com</a>
+          </p>
+
+          <p className="text-gray-500 pt-2 font-inter">
+            <span>Address: Binh Hung Hoa Ward, Ho Chi Minh City</span>
+            
           </p>
         </div>
 
@@ -44,7 +51,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://www.facebook.com/honganh.truong.184"
+            href="https://github.com/TruongHongAnh2004"
             target="_blank"
             rel="noopener noreferrer"
           >
